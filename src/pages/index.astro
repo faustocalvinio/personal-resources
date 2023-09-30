@@ -1,0 +1,27 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Card from '../components/Card.astro';
+---
+
+<Layout title="Welcome to Astro.">
+	<main class="flex flex-col mx-auto w-full">		
+		<h1 class="text-black  dark:text-white text-center">Welcome to my personal resources</h1>
+		<p class="text-black  dark:text-white text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, ea? </p>
+		<ul class="grid grid-rows-[repeat(auto-fill,minmax(180px,1fr))]  grid-cols-[repeat(auto-fill,minmax(300px,1fr))] justify-center gap-3 w-full mx-auto">
+			<li class="w-full relative bg-red-500"><div class="w-full h-full"><h3>css</h3><a class=" absolute top-0 w-full h-full" href="/css"></a></div></li>
+			
+			<li class="w-full relative bg-red-500"><div class="w-full h-full"><h3>css</h3><a class=" absolute top-0 w-full h-full" href="/css"></a></div></li><li class="w-full relative bg-red-500"><div class="w-full h-full"><h3>css</h3><a class=" absolute top-0 w-full h-full" href="/css"></a></div></li><li class="w-full relative bg-red-500"><div class="w-full h-full"><h3>css</h3><a class=" absolute top-0 w-full h-full" href="/css"></a></div></li>
+		</ul>
+	</main>
+</Layout>
+
+<style>	
+	.text-gradient {
+		background-image: var(--accent-gradient);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-size: 400%;
+		background-position: 0%;
+	}
+	
+</style>

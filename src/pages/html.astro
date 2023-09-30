@@ -1,0 +1,21 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Card from '../components/Card.astro';
+const htmlItems = await Astro.glob('../content/html/*.md')
+console.log(htmlItems)
+---
+
+<Layout title="Welcome to Astro.">
+    <main>
+        <h1 class="text-black text-center font-extrabold text-5xl dark:text-white ">css page</h1>
+        <ul class="grid grid-cols-5"> 
+            {htmlItems.map(item=>(
+                <li class="w-[350px]">
+                    <h1 class="font-extrabold text-2xl my-2">Item: {JSON.stringify(item.frontmatter.title)}</h1>
+                    <h4>{item.frontmatter.description}</h4>
+                    <p>{item.rawContent}</p>
+                </li>
+            ))}
+        </ul>
+    </main>
+</Layout>
