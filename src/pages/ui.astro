@@ -1,15 +1,15 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
-const cssItems = await Astro.glob('../content/css/*.md')
-console.log(cssItems)
+const uiItems = await Astro.glob('../content/ui-stuff/*.md')
+// console.log(cssItems)
 ---
 
 <Layout title="Welcome to Astro.">
     <main>
         <h1 class="mt-7 text-black text-center font-extrabold text-5xl dark:text-white ">css page</h1>
         <ul class="grid grid-cols-[repeat(auto-fit,minmax(400px,1fr));] gap-2 my-10"> 
-            {cssItems.map(item=>(
+            {uiItems.map(item=>(
                 <li class="w-[400px] bg-blue-400 px-2 py-4 rounded-xl flex flex-col gap-3">
                     <h1 class="font-extrabold text-2xl my-2">Item: {JSON.stringify(item.frontmatter.title)}</h1>
                     <h4>{item.frontmatter.description}</h4>

@@ -1,5 +1,6 @@
 ---
-title: 'First post CSS'
-description: 'Lorem ipsum dolor sit amet'
+title: 'Learn CSS Positioning'
+description: 'desc 1'
+link: 'https://ishadeed.com/article/learn-css-positioning/'
 ---
-em ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae ultricies leo integer malesuada nunc vel risus commodo vive
+Learn CSS Positioning
