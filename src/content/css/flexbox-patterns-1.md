@@ -1,6 +1,6 @@
 ---
 title: 'Flexbox Patterns'
-description: 'desc 1'
+description: 'Build awesome user interfaces with CSS flexbox. Examples and source code included.'
 link: 'https://flexboxpatterns.com/'
 ---
-Flexbox Patterns
+Build awesome user interfaces with CSS flexbox. Examples and source code included.

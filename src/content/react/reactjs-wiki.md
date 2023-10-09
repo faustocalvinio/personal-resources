@@ -1,6 +1,6 @@
 ---
-title: 'Item Title'
-description: 'Item description'
-link: 'https://google.es/'
+title: 'Preguntas típicas de React.js'
+description: 'Preguntas típicas sobre React para entrevistas de trabajo ⚛️'
+link: 'https://www.reactjs.wiki/'
 ---
-Item Content
+Preguntas típicas sobre React para entrevistas de trabajo ⚛️

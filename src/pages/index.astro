@@ -1,16 +1,49 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
+import CategoryCard from '../components/CategoryCard.astro';
+
+const resourcesCategories = [
+	{
+	name: 'HTML',
+	link:'/resources/html'
+	},
+	{
+	name: 'CSS',
+	link:'/resources/css'
+	},
+	{
+	name: 'UI',
+	link:'/resources/ui'
+	},
+	{
+	name: 'React',
+	link:'/resources/react'
+	},
+	{
+	name: 'APIs',
+	link:'/resources/api'
+	},
+	{
+	name: 'Ideas',
+	link:'/resources/ideas'
+	},
+]
+
 ---
 
-<Layout title="Welcome to Astro.">
+<Layout title="My Personal Resources">
 	<main class="flex flex-col mx-auto w-full">		
-		<h1 class="text-black  dark:text-white text-center">Welcome to my personal resources</h1>
-		<p class="text-black  dark:text-white text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, ea? </p>
-		<ul class="grid grid-rows-[repeat(auto-fill,minmax(180px,1fr))]  grid-cols-[repeat(auto-fill,minmax(300px,1fr))] justify-center gap-3 w-full mx-auto">
-			<li class="w-full relative bg-red-500"><div class="w-full h-full"><h3>css</h3><a class=" absolute top-0 w-full h-full" href="/css"></a></div></li>
+		<h1 class="text-black text-5xl my-5 dark:text-white text-center">Welcome to my personal resources</h1>
+		<p class="text-black mb-4 dark:text-white text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, ea? </p>
+		<ul class="grid grid-cols-[repeat(auto-fill,minmax(300px,1fr))] justify-center gap-3 w-full mx-auto">
+			{resourcesCategories.map(category=>(
+				<CategoryCard 
+					name={category.name}
+					link={category.link}
+				/>
 			
-			<li class="w-full relative bg-red-500"><div class="w-full h-full"><h3>css</h3><a class=" absolute top-0 w-full h-full" href="/css"></a></div></li><li class="w-full relative bg-red-500"><div class="w-full h-full"><h3>css</h3><a class=" absolute top-0 w-full h-full" href="/css"></a></div></li><li class="w-full relative bg-red-500"><div class="w-full h-full"><h3>css</h3><a class=" absolute top-0 w-full h-full" href="/css"></a></div></li>
+			))}
 		</ul>
 	</main>
 </Layout>

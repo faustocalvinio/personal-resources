@@ -1,6 +1,6 @@
 ---
 title: 'CSS Animations'
-description: 'desc 1'
+description: 'Create CSS @keyframe animations with a visual timeline similar to video editors.'
 link: 'https://keyframes.app/'
 ---
-CSS Animations
+Create CSS @keyframe animations with a visual timeline similar to video editors.

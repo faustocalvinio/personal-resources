@@ -1,6 +1,6 @@
 ---
-title: 'Item Title'
-description: 'Item description'
-link: 'https://google.es/'
+title: 'useHooks'
+description: 'A collection of modern, server-safe React hooks – from the ui.dev team'
+link: 'https://usehooks.com/'
 ---
-Item Content
+A collection of modern, server-safe React hooks – from the ui.dev team

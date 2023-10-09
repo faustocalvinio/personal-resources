@@ -1,6 +1,6 @@
 ---
-title: 'Cubic Bezier generator'
-description: 'desc 1'
+title: 'Cubic Bezier Generator'
+description: 'A better tool for cubic-bezier() easing'
 link: 'https://cubic-bezier.com/#.17,.67,.83,.67'
 ---
-Cubic Bezier generator
+A better tool for cubic-bezier() easing

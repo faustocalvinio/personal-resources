@@ -1,6 +1,6 @@
 ---
-title: 'Item Title'
-description: 'Item description'
-link: 'https://google.es/'
+title: 'Heaadless ui'
+description: 'unstyled, fully accessible UI components, designed to integrate beautifully with Tailwind CSS.'
+link: 'https://headlessui.com/'
 ---
-Item Content
+unstyled, fully accessible UI components, designed to integrate beautifully with Tailwind CSS.

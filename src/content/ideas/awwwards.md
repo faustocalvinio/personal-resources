@@ -1,6 +1,6 @@
 ---
-title: 'Item Title'
-description: 'Item description'
-link: 'https://google.es/'
+title: 'Awwwards'
+description: 'Follow what's brand new in digital design.'
+link: 'https://www.awwwards.com/'
 ---
-Item Content
+Follow what's brand new in digital design.

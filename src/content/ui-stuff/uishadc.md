@@ -1,6 +1,6 @@
 ---
-title: 'Item Title'
-description: 'Item description'
-link: 'https://google.es/'
+title: 'Shadcn'
+description: '300+ Free TailwindCSS Components & Templates'
+link: 'https://ui.shadcn.com/'
 ---
-Item Content
+300+ Free TailwindCSS Components & Templates.
