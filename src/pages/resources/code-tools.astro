@@ -1,14 +1,14 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 import Card from '../../components/Card.astro';
-const htmlItems = await Astro.glob('../../content/html/*.md')
+const codeToolsItems = await Astro.glob('../../content/code-tools/*.md')
 ---
 
-<Layout title="HTML Resources">
+<Layout title="Coding Tools">
     <main>
-        <h1 class="text-black text-center font-extrabold text-5xl dark:text-white ">HTML page</h1>
+        <h1 class="text-black text-center font-extrabold text-5xl dark:text-white ">Coding tools page</h1>
         <ul class="grid grid-cols-[repeat(auto-fit,minmax(400px,1fr));]"> 
-            {htmlItems.map(item=>(
+            {codeToolsItems.map(item=>(
                 <Card 
                     title={item.frontmatter.title}
                     description={item.frontmatter.description}

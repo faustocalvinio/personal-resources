@@ -1,12 +1,12 @@
 ---
-const { href, title, body, description } = Astro.props;
+const { link, title, body, description } = Astro.props;
 ---
 
-<div class="w-full h-80 bg-gray-600 dark:bg-neutral-800 rounded-3xl text-neutral-300 p-4 flex flex-col items-start justify-center gap-3 hover:bg-gray-900 hover:shadow-2xl hover:shadow-sky-400 transition-shadow">
+<div class="w-full h-80 bg-gray-600 dark:bg-gray-100 rounded-3xl text-neutral-300 p-4 flex flex-col items-start justify-center gap-3 hover:bg-gray-900 hover:shadow-2xl hover:shadow-sky-400 transition-shadow">
 	<div class="w-full h-40 bg-sky-300 rounded-2xl"></div>
 	<div class="">
-		<p class="font-extrabold">{title}</p>
-		<p class="">{description}</p>
+		<p class="font-extrabold dark:text-black">{title}</p>
+		<p class="dark:text-gray-700">{description}</p>
 	</div>
-	<button class="bg-sky-700 font-extrabold p-2 px-6 rounded-xl hover:bg-sky-500 transition-colors">See more</button>
+	<a href={link} target="_blank" class="bg-sky-700 font-extrabold p-2 px-6 rounded-xl hover:bg-sky-500 transition-colors">See more</a>
   </div>

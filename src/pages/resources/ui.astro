@@ -2,7 +2,6 @@
 import Layout from '../../layouts/Layout.astro';
 import Card from '../../components/Card.astro';
 const uiItems = await Astro.glob('../../content/ui-stuff/*.md')
-// console.log(cssItems)
 ---
 
 <Layout title="UI Resources">
@@ -13,6 +12,7 @@ const uiItems = await Astro.glob('../../content/ui-stuff/*.md')
                 <Card 
                     title={item.frontmatter.title}
                     description={item.frontmatter.description}
+                    link={item.frontmatter.link}
                 />
             ))}
         </ul>

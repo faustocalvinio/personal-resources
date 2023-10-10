@@ -2,7 +2,6 @@
 import Layout from '../../layouts/Layout.astro';
 import Card from '../../components/Card.astro';
 const reactItems = await Astro.glob('../../content/react/*.md')
-console.log(reactItems[0].frontmatter)
 ---
 
 <Layout title="React Resources">
@@ -13,6 +12,7 @@ console.log(reactItems[0].frontmatter)
                 <Card 
                     title={item.frontmatter.title}
                     description={item.frontmatter.description}
+                    link={item.frontmatter.link}
                 />
             ))}
         </ul>

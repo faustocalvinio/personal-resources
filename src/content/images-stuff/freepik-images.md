@@ -1,6 +1,6 @@
 ---
-title: 'Item Title'
-description: 'Item description'
-link: 'https://google.es/'
+title: 'Freepik'
+description: 'Turn ideas into outstanding designs with high-quality vectors, photos, videos, mockups, and more'
+link: 'https://www.freepik.com/'
 ---
-Item Content
+Turn ideas into outstanding designs with high-quality vectors, photos, videos, mockups, and more

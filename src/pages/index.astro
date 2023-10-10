@@ -6,11 +6,13 @@ import CategoryCard from '../components/CategoryCard.astro';
 const resourcesCategories = [
 	{
 	name: 'HTML',
-	link:'/resources/html'
+	link:'/resources/html',
+	image: '/src/svg/html.svg'
 	},
 	{
 	name: 'CSS',
-	link:'/resources/css'
+	link:'/resources/css',
+	image: '/src/svg/css.svg'
 	},
 	{
 	name: 'UI',
@@ -28,6 +30,22 @@ const resourcesCategories = [
 	name: 'Ideas',
 	link:'/resources/ideas'
 	},
+	{
+	name: 'Coding Tools',
+	link:'/resources/code-tools'
+	},
+	{
+	name: 'JavaScript',
+	link:'/resources/javascript'
+	},
+	{
+	name: 'Images Resources',
+	link:'/resources/images-res'
+	},
+	{
+	name: 'Interview Resources',
+	link:'/resources/interview'
+	},
 ]
 
 ---
@@ -35,26 +53,17 @@ const resourcesCategories = [
 <Layout title="My Personal Resources">
 	<main class="flex flex-col mx-auto w-full">		
 		<h1 class="text-black text-5xl my-5 dark:text-white text-center">Welcome to my personal resources</h1>
-		<p class="text-black mb-4 dark:text-white text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, ea? </p>
+		<p class="text-black text-xl mb-4 dark:text-white text-center">On this personal webpage, you'll find a curated selection of valuable resources that I've collected over time. These items have been carefully chosen for their informative and inspirational qualities. Feel free to explore and benefit from this collection, just as I have.</p>
 		<ul class="grid grid-cols-[repeat(auto-fill,minmax(300px,1fr))] justify-center gap-3 w-full mx-auto">
 			{resourcesCategories.map(category=>(
 				<CategoryCard 
 					name={category.name}
 					link={category.link}
+					
 				/>
+			
 			
 			))}
 		</ul>
 	</main>
 </Layout>
-
-<style>	
-	.text-gradient {
-		background-image: var(--accent-gradient);
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-		background-size: 400%;
-		background-position: 0%;
-	}
-	
-</style>
