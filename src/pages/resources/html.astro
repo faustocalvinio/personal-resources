@@ -13,6 +13,7 @@ const htmlItems = await Astro.glob('../../content/html/*.md')
                     title={item.frontmatter.title}
                     description={item.frontmatter.description}
                     link={item.frontmatter.link}
+                    image={item.frontmatter.imageURL}
                 />
             ))}
         </ul>
