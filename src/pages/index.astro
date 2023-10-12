@@ -18,56 +18,64 @@ const resourcesCategories = [
 	{
 	name: 'HTML',
 	link:'/resources/html',
-	image: htmlSvg.src
+	image: htmlSvg.src,
+	description:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean consequat est vitae risus ullamcorper euismod. Quisque et justo nec nunc viverra feugiat. Nunc ac enim vel nunc ullamcorper posuere. Donec.',
 	},
 	{
 	name: 'CSS',
 	link:'/resources/css',
-	image: cssSvg.src
+	image: cssSvg.src,
+	description:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean consequat est vitae risus ullamcorper euismod. Quisque et justo nec nunc viverra feugiat. Nunc ac enim vel nunc ullamcorper posuere. Donec.',
 	},
 	{
 	name: 'UI',
 	link:'/resources/ui',
-	image: uiSvg.src
+	image: uiSvg.src,
+	description:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean consequat est vitae risus ullamcorper euismod. Quisque et justo nec nunc viverra feugiat. Nunc ac enim vel nunc ullamcorper posuere. Donec.',
 	},
 	{
 	name: 'React',
 	link:'/resources/react',
-	image: reactSvg.src
+	image: reactSvg.src,
+	description:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean consequat est vitae risus ullamcorper euismod. Quisque et justo nec nunc viverra feugiat. Nunc ac enim vel nunc ullamcorper posuere. Donec.',
 	},
 	{
 	name: 'APIs',
 	link:'/resources/api',
-	image: apiSvg.src
+	image: apiSvg.src,
+	description:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean consequat est vitae risus ullamcorper euismod. Quisque et justo nec nunc viverra feugiat. Nunc ac enim vel nunc ullamcorper posuere. Donec.',
 	},
 	{
 	name: 'Ideas',
 	link:'/resources/ideas',
-	image: ideasSvg.src
+	image: ideasSvg.src,
+	description:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean consequat est vitae risus ullamcorper euismod. Quisque et justo nec nunc viverra feugiat. Nunc ac enim vel nunc ullamcorper posuere. Donec.',
 	},
 	{
 	name: 'Coding Tools',
 	link:'/resources/code-tools',
-	image: toolsSvg.src
+	image: toolsSvg.src,
+	description:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean consequat est vitae risus ullamcorper euismod. Quisque et justo nec nunc viverra feugiat. Nunc ac enim vel nunc ullamcorper posuere. Donec.',
 	},
 	{
 	name: 'JavaScript',
 	link:'/resources/javascript',
-	image: jsSvg.src
+	image: jsSvg.src,
+	description:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean consequat est vitae risus ullamcorper euismod. Quisque et justo nec nunc viverra feugiat. Nunc ac enim vel nunc ullamcorper posuere. Donec.',
 	},
 	{
 	name: 'Images Resources',
 	link:'/resources/images-res',
-	image: imgSvg.src
+	image: imgSvg.src,
+	description:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean consequat est vitae risus ullamcorper euismod. Quisque et justo nec nunc viverra feugiat. Nunc ac enim vel nunc ullamcorper posuere. Donec.',
 	},
 	{
 	name: 'Interview Resources',
 	link:'/resources/interview',
-	image: interviewSvg.src
+	image: interviewSvg.src,
+	description:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean consequat est vitae risus ullamcorper euismod. Quisque et justo nec nunc viverra feugiat. Nunc ac enim vel nunc ullamcorper posuere. Donec.',
 	},
 ]
-// console.log(resourcesCategories[0].image);
-
 ---
 
 <Layout title="My Personal Resources" >
@@ -80,6 +88,7 @@ const resourcesCategories = [
 					name={category.name}
 					link={category.link}
 					image={category.image}
+					description={category.description}
 				/>
 			
 			

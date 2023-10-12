@@ -13,6 +13,7 @@ const codeToolsItems = await Astro.glob('../../content/code-tools/*.md')
                     title={item.frontmatter.title}
                     description={item.frontmatter.description}
                     link={item.frontmatter.link}
+                    image={ item.frontmatter.imageURL!== undefined ? item.frontmatter.imageURL : 'https://res.cloudinary.com/dc6mrv5cb/image/upload/v1697022104/personal-resources/html/html-css-js.com_html_generator__octr4j.png' }
                 />
             ))}
         </ul>
