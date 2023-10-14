@@ -7,7 +7,7 @@ const uiItems = await Astro.glob('../../content/ui-stuff/*.md')
 <Layout title="UI Resources">
     <main>
         <h1 class="mt-7 text-black text-center font-extrabold text-5xl dark:text-white ">ui page</h1>
-        <ul class="grid grid-cols-[repeat(auto-fit,minmax(400px,1fr));] gap-2 my-10"> 
+        <ul class="grid grid-cols-[repeat(auto-fit,minmax(400px,1fr));] gap-2 my-10 max-sm:grid-cols-1 max-sm:gap-3 max-sm:justify-center"> 
             {uiItems.map(item=>(
                 <Card 
                     title={item.frontmatter.title}

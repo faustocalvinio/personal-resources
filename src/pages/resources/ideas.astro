@@ -7,7 +7,7 @@ const ideasItems = await Astro.glob('../../content/ideas/*.md')
 <Layout title="Ideas Resources">
     <main>
         <h1 class="text-black text-center font-extrabold text-5xl dark:text-white ">Ideas page</h1>
-        <ul class="grid grid-cols-[repeat(auto-fit,minmax(400px,1fr));]"> 
+        <ul class="grid grid-cols-[repeat(auto-fit,minmax(400px,1fr));] max-sm:grid-cols-1 max-sm:gap-3 max-sm:justify-center"> 
             {ideasItems.map(item=>(
                 <Card 
                     title={item.frontmatter.title}

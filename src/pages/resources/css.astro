@@ -7,7 +7,7 @@ const cssItems = await Astro.glob('../../content/css/*.md')
 <Layout title="CSS Resources">
     <main>
         <h1 class="mt-7 text-black text-center font-extrabold text-5xl dark:text-white ">css page</h1>
-        <ul class="grid grid-cols-[repeat(auto-fit,minmax(400px,1fr));] gap-2 my-10"> 
+        <ul class="grid grid-cols-[repeat(auto-fit,minmax(400px,1fr));] gap-2 my-10 max-sm:grid-cols-1 max-sm:gap-3 max-sm:justify-center"> 
             {cssItems.map(item=>(
                 <Card 
                     title={item.frontmatter.title}
