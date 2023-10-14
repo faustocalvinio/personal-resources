@@ -1,12 +1,14 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 import Card from '../../components/Card.astro';
+import CategoryTitle from '../../components/CategoryTitle.astro';
+
 const interviewItems = await Astro.glob('../../content/interviews/*.md')
 ---
 
 <Layout title="Interview Resources">
     <main>
-        <h1 class="text-black text-center font-extrabold text-5xl dark:text-white ">Interview page</h1>
+        <CategoryTitle title="Test title" />
         <ul class="grid grid-cols-[repeat(auto-fit,minmax(400px,1fr));] max-sm:grid-cols-1 max-sm:gap-3 max-sm:justify-center"> 
             {interviewItems.map(item=>(
                 <Card 

@@ -1,12 +1,13 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 import Card from '../../components/Card.astro';
+import CategoryTitle from '../../components/CategoryTitle.astro';
 const apiItems = await Astro.glob('../../content/apis/*.md')
 ---
 
 <Layout title="APIS Resources">
     <main>
-        <h1 class="text-black text-center font-extrabold text-5xl dark:text-white ">API page</h1>
+        <CategoryTitle title="Test title" />
         <ul class="grid grid-cols-[repeat(auto-fit,minmax(400px,1fr));] max-sm:grid-cols-1 max-sm:gap-3 max-sm:justify-center"> 
             {apiItems.map(item=>(
                 <Card 
