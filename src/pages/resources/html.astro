@@ -8,7 +8,7 @@ const htmlItems = await Astro.glob('../../content/html/*.md')
 
 <Layout title="HTML Resources">
     <main>
-        <CategoryTitle title="Test title" />
+        <CategoryTitle title="HTML Resources" />
         <ul class="grid grid-cols-[repeat(auto-fit,minmax(400px,1fr));]  max-sm:grid-cols-1 max-sm:gap-3 max-sm:justify-center"> 
             {htmlItems.map(item=>(
                 <Card 

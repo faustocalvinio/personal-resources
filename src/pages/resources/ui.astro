@@ -2,13 +2,12 @@
 import Layout from '../../layouts/Layout.astro';
 import Card from '../../components/Card.astro';
 import CategoryTitle from '../../components/CategoryTitle.astro';
-
-const uiItems = await Astro.glob('../../content/ui-stuff/*.md')
+const uiItems = await Astro.glob('../../content/ui-stuff/*.md');
 ---
 
 <Layout title="UI Resources">
     <main>
-        <CategoryTitle title="Test title" />
+        <CategoryTitle title="UI Resources" />
         <ul class="grid grid-cols-[repeat(auto-fit,minmax(400px,1fr));] gap-2 my-10 max-sm:grid-cols-1 max-sm:gap-3 max-sm:justify-center"> 
             {uiItems.map(item=>(
                 <Card 

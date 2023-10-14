@@ -8,7 +8,7 @@ const reactItems = await Astro.glob('../../content/react/*.md')
 
 <Layout title="React Resources">
     <main>
-        <CategoryTitle title="Test title" />
+        <CategoryTitle title="React Resources" />
         <ul class="grid grid-cols-[repeat(auto-fit,minmax(400px,1fr));] gap-2 my-10 max-sm:grid-cols-1 max-sm:gap-3 max-sm:justify-center"> 
             {reactItems.map(item=>(
                 <Card 

@@ -8,7 +8,7 @@ const cssItems = await Astro.glob('../../content/css/*.md')
 
 <Layout title="CSS Resources">
     <main>
-        <CategoryTitle title="Test title" />
+        <CategoryTitle title="CSS Resources" />
         <ul class="grid grid-cols-[repeat(auto-fit,minmax(400px,1fr));] gap-4 my-0 max-sm:grid-cols-1 max-sm:gap-3 max-sm:justify-center"> 
             {cssItems.map(item=>(
                 <Card 
@@ -21,11 +21,3 @@ const cssItems = await Astro.glob('../../content/css/*.md')
         </ul>
     </main>
 </Layout>
-
-<!-- 
-<li class="w-[400px] bg-blue-400 px-2 py-4 rounded-xl flex flex-col gap-3">
-    <h1 class="font-extrabold text-2xl my-2">Item: {JSON.stringify(item.frontmatter.title)}</h1>
-    <h4>{item.frontmatter.description}</h4>
-    <p>{item.rawContent}</p>
-    <a href={item.frontmatter.link} target="_blank" class="border-2 border-red-500 px-4 py-2 my-4 bg-red-100 w-fit">Link</a>
-</li> -->

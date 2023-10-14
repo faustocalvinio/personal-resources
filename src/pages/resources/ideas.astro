@@ -8,7 +8,7 @@ const ideasItems = await Astro.glob('../../content/ideas/*.md')
 
 <Layout title="Ideas Resources">
     <main>
-        <CategoryTitle title="Test title" />
+        <CategoryTitle title="Inspiration & ideas" />
         <ul class="grid grid-cols-[repeat(auto-fit,minmax(400px,1fr));] max-sm:grid-cols-1 max-sm:gap-3 max-sm:justify-center"> 
             {ideasItems.map(item=>(
                 <Card 
