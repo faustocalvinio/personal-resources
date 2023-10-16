@@ -4,16 +4,19 @@ import favicon from '../assets/favicon.png';
 import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
 import CategoryCard from '../components/CategoryCard.astro';
+
+import apiSvg from '../assets/svg/api.svg';
+import cssSvg from '../assets/svg/css.svg';
+import challengeSvg from '../assets/svg/challenge.svg';
+import coursesSvg from '../assets/svg/courses.svg';
 import htmlSvg from '../assets/svg/html.svg';
-import cssSvg from '../assets/svg/css.svg'
-import reactSvg from '../assets/svg/react.svg';
 import ideasSvg from '../assets/svg/ideas.svg';
-import jsSvg from '../assets/svg/js.svg'
 import imgSvg from '../assets/svg/image.svg';
 import interviewSvg from '../assets/svg/mic.svg';
-import uiSvg from '../assets/svg/ui.svg';
-import apiSvg from '../assets/svg/api.svg';
+import jsSvg from '../assets/svg/js.svg'
+import reactSvg from '../assets/svg/react.svg';
 import toolsSvg from '../assets/svg/tools.svg';
+import uiSvg from '../assets/svg/ui.svg';
 const resourcesCategories = [
 	{
 	name: 'HTML',
@@ -75,6 +78,19 @@ const resourcesCategories = [
 	image: interviewSvg.src,
 	description:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean consequat est vitae risus ullamcorper euismod. Quisque et justo nec nunc viverra feugiat. Nunc ac enim vel nunc ullamcorper posuere. Donec.',
 	},
+	{
+	name: 'Challenges',
+	link:'/resources/challenges',
+	image: challengeSvg.src,
+	description:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean consequat est vitae risus ullamcorper euismod. Quisque et justo nec nunc viverra feugiat. Nunc ac enim vel nunc ullamcorper posuere. Donec.',
+	},
+	{
+	name: 'Courses',
+	link:'/resources/courses',
+	image: coursesSvg.src,
+	description:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean consequat est vitae risus ullamcorper euismod. Quisque et justo nec nunc viverra feugiat. Nunc ac enim vel nunc ullamcorper posuere. Donec.',
+	},
+	
 ]
 ---
 
