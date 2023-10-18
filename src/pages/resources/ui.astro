@@ -2,13 +2,14 @@
 import Layout from '../../layouts/Layout.astro';
 import Card from '../../components/Card.astro';
 import CategoryTitle from '../../components/CategoryTitle.astro';
+import PageCatList from '../../components/PageCatList.astro';
 const uiItems = await Astro.glob('../../content/ui-stuff/*.md');
 ---
 
 <Layout title="UI Resources">
     <main>
         <CategoryTitle title="UI Resources" />
-        <ul class="grid grid-cols-[repeat(auto-fit,minmax(400px,1fr));] gap-2 my-10 max-sm:grid-cols-1 max-sm:gap-3 max-sm:justify-center"> 
+        <PageCatList> 
             {uiItems.map(item=>(
                 <Card 
                     title={item.frontmatter.title}
@@ -17,6 +18,6 @@ const uiItems = await Astro.glob('../../content/ui-stuff/*.md');
                     image={ item.frontmatter.imageURL!== undefined ? item.frontmatter.imageURL : 'https://res.cloudinary.com/dc6mrv5cb/image/upload/v1697022104/personal-resources/html/html-css-js.com_html_generator__octr4j.png' }
                 />
             ))}
-        </ul>
+        </PageCatList>
     </main>
 </Layout>

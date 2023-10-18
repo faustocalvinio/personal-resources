@@ -1,4 +1,13 @@
-# Astro Starter Kit: Basics
+# Personal Resources Website 
+
+- [Quick Overview](#quick-overview)
+
+
+---
+
+## :information_source: Quick Overview
+
+Project created with Astro.
 
 ```sh
 npm create astro@latest -- --template basics

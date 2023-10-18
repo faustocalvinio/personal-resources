@@ -2,6 +2,7 @@
 import Layout from '../../layouts/Layout.astro';
 import Card from '../../components/Card.astro';
 import CategoryTitle from '../../components/CategoryTitle.astro';
+import PageCatList from '../../components/PageCatList.astro';
 
 const challengesItems = await Astro.glob('../../content/challenges/*.md')
 ---
@@ -9,7 +10,7 @@ const challengesItems = await Astro.glob('../../content/challenges/*.md')
 <Layout title="Challenges">
     <main>
         <CategoryTitle title="Challenges" />
-        <ul class="grid grid-cols-[repeat(auto-fit,minmax(400px,1fr));] gap-4 my-0 max-sm:grid-cols-1 max-sm:gap-3 max-sm:justify-center"> 
+        <PageCatList>
             {challengesItems.map(item=>(
                 <Card 
                     title={item.frontmatter.title}
@@ -18,6 +19,6 @@ const challengesItems = await Astro.glob('../../content/challenges/*.md')
                     image={ item.frontmatter.imageURL!== undefined ? item.frontmatter.imageURL : 'https://res.cloudinary.com/dc6mrv5cb/image/upload/v1697022104/personal-resources/html/html-css-js.com_html_generator__octr4j.png' }
                 />
             ))}
-        </ul>
+        </PageCatList>       
     </main>
 </Layout>

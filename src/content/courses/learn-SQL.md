@@ -1,7 +1,7 @@
 ---
 title: '5 Sitios para Aprender SQL de forma interactiva:'
 description: 'Sitios para Aprender SQL de forma interactiva:'
-link: 'sqlzoo․net'
+link: 'https://blog-fausto.vercel.app/blog/using-mdx/'
 # imageURL: ''
 ---
 1. sqlzoo․net
