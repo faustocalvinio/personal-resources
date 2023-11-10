@@ -4,14 +4,14 @@ import Card from '../../components/Card.astro';
 import CategoryTitle from '../../components/CategoryTitle.astro';
 import PageCatList from '../../components/PageCatList.astro';
 
-const coursesItems = await Astro.glob('../../content/courses/*.md')
+const cheatsheetsItems = await Astro.glob('../../content/cheatsheets/**.md')
 ---
 
-<Layout title="Courses">
+<Layout title="Cheatsheets">
     <main>
-        <CategoryTitle title="Courses" />
-        <PageCatList>
-            {coursesItems.map(item=>(
+        <CategoryTitle title="Cheatsheets" />
+        <PageCatList> 
+            {cheatsheetsItems.map(item=>(
                 <Card 
                     title={item.frontmatter.title}
                     description={item.frontmatter.description}
@@ -19,6 +19,6 @@ const coursesItems = await Astro.glob('../../content/courses/*.md')
                     image={ item.frontmatter.imageURL!== undefined ? item.frontmatter.imageURL : 'https://res.cloudinary.com/dc6mrv5cb/image/upload/v1697022104/personal-resources/html/html-css-js.com_html_generator__octr4j.png' }
                 />
             ))}
-        </PageCatList>        
+        </PageCatList>
     </main>
 </Layout>
