@@ -136,18 +136,12 @@ const resourcesCategories = [
     
   </nav>
   <script>
-
     import { Collapse } from 'flowbite';
-
     /*
     * $targetEl: required
     * $triggerEl: optional
     * options: optional
     */
-
-
-
-
     const targetEl=document.getElementById('dropdownNavbar')
     const triggerEl=document.getElementById('dropdownNavbarLink')
     const collapse = new Collapse(targetEl, triggerEl);
@@ -157,7 +151,8 @@ const resourcesCategories = [
     triggerEl.addEventListener('mouseleave',()=>{
         // collapse.collapse()
     })
-    targetEl.addEventListener('mouseleave',()=>collapse.collapse());
+    targetEl.addEventListener('mouseleave',()=>collapse.collapse());  
+
     var themeToggleDarkIcon = document.getElementById('theme-toggle-dark-icon');
     var themeToggleLightIcon = document.getElementById('theme-toggle-light-icon');
 
@@ -170,33 +165,31 @@ const resourcesCategories = [
 
     var themeToggleBtn = document.getElementById('theme-toggle');
 
-    themeToggleBtn.addEventListener('click', function() {
+    themeToggleBtn.addEventListener('click', function() {   
+      themeToggleDarkIcon.classList.toggle('hidden');
+      themeToggleLightIcon.classList.toggle('hidden');
 
-    // toggle icons inside button
-    themeToggleDarkIcon.classList.toggle('hidden');
-    themeToggleLightIcon.classList.toggle('hidden');
+      // if set via local storage previously
+      if (localStorage.getItem('color-theme')) {
+          if (localStorage.getItem('color-theme') === 'light') {
+              document.documentElement.classList.add('dark');
+              localStorage.setItem('color-theme', 'dark');
+          } else {
+              document.documentElement.classList.remove('dark');
+              localStorage.setItem('color-theme', 'light');
+          }
 
-    // if set via local storage previously
-    if (localStorage.getItem('color-theme')) {
-        if (localStorage.getItem('color-theme') === 'light') {
-            document.documentElement.classList.add('dark');
-            localStorage.setItem('color-theme', 'dark');
-        } else {
-            document.documentElement.classList.remove('dark');
-            localStorage.setItem('color-theme', 'light');
-        }
+      // if NOT set via local storage previously
+      } else {
+          if (document.documentElement.classList.contains('dark')) {
+              document.documentElement.classList.remove('dark');
+              localStorage.setItem('color-theme', 'light');
+          } else {
+              document.documentElement.classList.add('dark');
+              localStorage.setItem('color-theme', 'dark');
+          }
+      }    
+    });
 
-    // if NOT set via local storage previously
-    } else {
-        if (document.documentElement.classList.contains('dark')) {
-            document.documentElement.classList.remove('dark');
-            localStorage.setItem('color-theme', 'light');
-        } else {
-            document.documentElement.classList.add('dark');
-            localStorage.setItem('color-theme', 'dark');
-        }
-    }
-    
-});
 
   </script>
