@@ -2,6 +2,5 @@
 title: 'Just Remote'
 description: 'Discover fully and partially remote jobs from the greatest remote working companies'
 link: 'https://justremote.co/'
-# imageURL:
+imageURL: 'https://res.cloudinary.com/dc6mrv5cb/image/upload/v1701194697/personal-resources/jobs/justremote.co__oi5c8f.png'
 ---
-Discover fully and partially remote jobs from the greatest remote working companies

@@ -4,4 +4,3 @@ description: 'Layoutit grid is a CSS Grid layout generator. Quickly draw down we
 link: 'https://grid.layoutit.com/'
 imageURL: 'https://res.cloudinary.com/dc6mrv5cb/image/upload/v1697323013/personal-resources/css/grid.layoutit.com__btifvh.png'
 ---
-Layoutit grid is a CSS Grid layout generator. Quickly draw down web pages layouts with our clean editor, and get HTML and CSS code to quickstart your next project.

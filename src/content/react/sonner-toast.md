@@ -2,6 +2,5 @@
 title: 'Sonner'
 description: 'An opinionated toast component for React.'
 link: 'https://sonner.emilkowal.ski/'
-# imageURL:
+imageURL: 'https://res.cloudinary.com/dc6mrv5cb/image/upload/v1701191691/personal-resources/react/sonner.emilkowal.ski__fsdwjr.png'
 ---
-An opinionated toast component for React.

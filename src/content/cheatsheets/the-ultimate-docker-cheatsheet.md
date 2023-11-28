@@ -2,6 +2,5 @@
 title: 'The Ultimate Docker Cheat Sheet'
 description: 'a summary of commonly used Docker commands and their options, as well as other useful information related to Docker.'
 link: 'https://dockerlabs.collabnix.com/docker/cheatsheet/'
-# imageURL:
+imageURL: 'https://res.cloudinary.com/dc6mrv5cb/image/upload/v1701191685/personal-resources/cheatsheets/dockerlabs.collabnix.com_docker_cheatsheet__ilfmml.png'
 ---
-a summary of commonly used Docker commands and their options, as well as other useful information related to Docker.

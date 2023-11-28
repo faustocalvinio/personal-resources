@@ -2,6 +2,5 @@
 title: 'Learn Git Branching'
 description: 'The most visual and interactive way to learn Git on the web'
 link: 'https://learngitbranching.js.org/?locale=en'
-# imageURL:
+imageURL: 'https://res.cloudinary.com/dc6mrv5cb/image/upload/v1701194202/personal-resources/learning/learngitbranching.js.org__locale_en_cyafp7.png'
 ---
-The most visual and interactive way to learn Git on the web
