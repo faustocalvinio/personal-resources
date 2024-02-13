@@ -1,24 +1,30 @@
 ---
-import Layout from '../../layouts/Layout.astro';
-import Card from '../../components/Card.astro';
-import CategoryTitle from '../../components/CategoryTitle.astro';
-import PageCatList from '../../components/PageCatList.astro';
+import Layout from "../../layouts/Layout.astro";
+import Card from "../../components/Card.astro";
+import CategoryTitle from "../../components/CategoryTitle.astro";
+import PageCatList from "../../components/PageCatList.astro";
 
-const challengesItems = await Astro.glob('../../../content/challenges/*.md')
+const challengesItems = await Astro.glob("../../../content/challenges/*.md");
 ---
 
 <Layout title="Challenges">
-    <main>
-        <CategoryTitle title="Challenges" />
-        <PageCatList>
-            {challengesItems.map(item=>(
-                <Card 
-                    title={item.frontmatter.title}
-                    description={item.frontmatter.description}
-                    link={item.frontmatter.link}
-                    image={ item.frontmatter.imageURL!== undefined ? item.frontmatter.imageURL : 'https://res.cloudinary.com/dc6mrv5cb/image/upload/v1697022104/personal-resources/html/html-css-js.com_html_generator__octr4j.png' }
-                />
-            ))}
-        </PageCatList>       
-    </main>
+   <main>
+      <CategoryTitle title="Challenges" />
+      <PageCatList>
+         {
+            challengesItems.map((item) => (
+               <Card
+                  title={item.frontmatter.title}
+                  description={item.frontmatter.description}
+                  link={item.frontmatter.link}
+                  image={
+                     item.frontmatter.imageURL !== undefined
+                        ? item.frontmatter.imageURL
+                        : "https://res.cloudinary.com/dc6mrv5cb/image/upload/v1697022104/personal-resources/html/html-css-js.com_html_generator__octr4j.png"
+                  }
+               />
+            ))
+         }
+      </PageCatList>
+   </main>
 </Layout>
