@@ -54,4 +54,31 @@ const { title } = Astro.props;
       background-color: #fff;
       color: #000;
    }
+   .dark ::-webkit-scrollbar {
+      width: 12px; /* Width of the scrollbar */
+   }
+
+   /* Track */
+   .dark ::-webkit-scrollbar-track {
+      background: #111827; /* Color of the scrollbar track */
+   }
+
+   /* Handle */
+   .dark ::-webkit-scrollbar-thumb {
+      background: #414141; /* Color of the scrollbar handle */
+   }
+
+   ::-webkit-scrollbar {
+      width: 12px; /* Width of the scrollbar */
+   }
+
+   /* Track */
+   ::-webkit-scrollbar-track {
+      background: #ffffff; /* Color of the scrollbar track */
+   }
+
+   /* Handle */
+   ::-webkit-scrollbar-thumb {
+      background: #b3b3b3; /* Color of the scrollbar handle */
+   }
 </style>
