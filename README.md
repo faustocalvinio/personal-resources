@@ -1,14 +1,14 @@
 
 # Personal Resources
 
-website with the resources that i've been saving
+Website with the resources that i've been saving related to web development.
 
 ## Screenshots
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![App Screenshot](/public/screenshots/personal-resources.vercel.app_.webp)
 
 
-## Features
+## Categories
 
 
 - HTML
