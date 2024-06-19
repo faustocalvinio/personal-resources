@@ -2,5 +2,5 @@
 title: 'Uicolors'
 description: 'Tailwind CSS Color Generator'
 link: 'https://uicolors.app/create'
-imageURL: 'https://res.cloudinary.com/dc6mrv5cb/image/upload/v1701191400/personal-resources/ui-stuff/uicolors.app_create_rmc9re.png'
+imageURL: 'https://res.cloudinary.com/dc6mrv5cb/image/upload/v1718792899/personal-resources/ui-stuff/uigarage.net__id0ez7_qf4whx.webp'
 ---
