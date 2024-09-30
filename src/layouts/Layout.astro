@@ -1,11 +1,9 @@
 ---
 import Footer from "../components/Footer.astro";
-
 import Navbar from "../components/Navbar.astro";
 interface Props {
    title: string;
 }
-
 const { title } = Astro.props;
 ---
 
@@ -55,30 +53,26 @@ const { title } = Astro.props;
       color: #000;
    }
    .dark ::-webkit-scrollbar {
-      width: 12px; /* Width of the scrollbar */
+      width: 12px;
    }
 
-   /* Track */
    .dark ::-webkit-scrollbar-track {
-      background: #111827; /* Color of the scrollbar track */
+      background: #111827;
    }
 
-   /* Handle */
    .dark ::-webkit-scrollbar-thumb {
-      background: #414141; /* Color of the scrollbar handle */
+      background: #414141;
    }
 
    ::-webkit-scrollbar {
-      width: 12px; /* Width of the scrollbar */
+      width: 12px;
    }
 
-   /* Track */
    ::-webkit-scrollbar-track {
-      background: #ffffff; /* Color of the scrollbar track */
+      background: #ffffff;
    }
 
-   /* Handle */
    ::-webkit-scrollbar-thumb {
-      background: #b3b3b3; /* Color of the scrollbar handle */
+      background: #b3b3b3;
    }
 </style>
